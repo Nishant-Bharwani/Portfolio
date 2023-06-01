@@ -58,9 +58,7 @@ export const fetchContributions = async(username, token) => {
                 Authorization: `bearer ${token}`
             }
         });
-        console.log(apiResponse);
         const User = apiResponse.data.data.user;
-        console.log(User);
         if (User === null)
             return `Can't fetch any contribution. Please check your username.`;
 

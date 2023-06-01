@@ -39,10 +39,6 @@ const ContactForm = () => {
     };
     const sendEmail = async () => {
         try {
-            // await axios.post(
-            //     "https://us-central1-portfolio-3af99.cloudfunctions.net/submit",
-            //     formData
-            // );
 
             const messageCollection = collection(db, 'messages');
             await setDoc(doc(messageCollection), formData);

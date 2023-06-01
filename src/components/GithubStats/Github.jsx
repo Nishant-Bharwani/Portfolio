@@ -12,7 +12,6 @@ const Github = () => {
         setLoading(true);
         // const apiData = await axios.get("/api/github-contributions");
         const apiData = await fetchContributions('Nishant-Bharwani', TOKEN || "");
-        console.log(apiData);
         setData(apiData);
         setLoading(false);
     };

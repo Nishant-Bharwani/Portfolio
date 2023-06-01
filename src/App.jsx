@@ -14,6 +14,7 @@ const Particles = lazy(() => import('react-particles'));
 const MyStats = lazy(() => import('./components/MyStats/MyStats'));
 
 const App = () => {
+  console.log(process.env.REACT_APP_FIREBASE_API_KEY);
   const ref = useRef(null);
   const particlesInit = useCallback(async engine => {
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets

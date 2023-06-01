@@ -14,7 +14,6 @@ function ProjectCard({
     stack,
     github,
 }) {
-    console.log(typeof DevIcons);
     return (
         <div className={styles.main} style={{ flexDirection: direction }}>
             <div className={styles.description}>
