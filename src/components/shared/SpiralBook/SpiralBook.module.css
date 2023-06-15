@@ -1,0 +1,40 @@
+.spiralBook {
+    width: 200px;
+    height: 350px;
+    background-color: var(--background-color);
+    border: 3px solid var(--text-color);
+    border-radius: 20px;
+    margin: 0;
+    position: relative;
+}
+
+.spiralBook .spiralWinding {
+    width: 3rem;
+    height: 100%;
+    background: var(--background-color);
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.spiralBook .spiralWinding .hole {
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+    margin: 0 0.6rem;
+    position: relative;
+}
+
+.spiralBook .spiralWinding .wire {
+    width: 0.3rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    margin-top: -30px;
+    margin-left: 9px;
+    border-radius: 2px;
+}

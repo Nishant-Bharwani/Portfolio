@@ -10,9 +10,9 @@ const MyStats = () => {
             <div>
                 <h1>More About Me</h1>
                 <SpotifyStats />
+                {/* <hr />
+                <Poetries /> */}
                 <hr />
-                {/* <Poetries /> */}
-                {/* <hr /> */}
                 <GithubStats />
             </div>
         </div>

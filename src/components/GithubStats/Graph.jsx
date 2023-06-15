@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import {
-  AreaChart,
-  Tooltip,
   Area,
+  AreaChart,
+  ResponsiveContainer,
+  Tooltip,
   XAxis,
   YAxis,
-  ResponsiveContainer,
 } from "recharts";
 import CustomToolTip from "./ToolTip";
 
@@ -32,6 +32,7 @@ const Graph = ({ userData }) => {
     <>
       <ResponsiveContainer height={350}>
         <AreaChart
+          title="My Contribution over last 30 days"
           data={data}
           margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
         >

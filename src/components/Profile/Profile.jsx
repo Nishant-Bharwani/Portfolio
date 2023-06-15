@@ -19,7 +19,7 @@ function Profile() {
                 <h2>I'm a student at SKIT, Jaipur</h2>
                 <h2>
                     and a{" "}
-                    <span style={{ color: "#ff8906" }}>Web Developer</span>
+                    <span style={{ color: "var(--button-color)" }}>Web Developer</span>
 
                 </h2>
                 <a href='/Nishant_Bharwani_Resume.pdf' target='_blank' rel='noopener noreferrer'>
