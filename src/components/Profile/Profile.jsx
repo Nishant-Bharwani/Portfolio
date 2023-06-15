@@ -1,4 +1,5 @@
 import { FaDownload } from "react-icons/fa";
+import TextLoop from "react-text-loop";
 import styles from "./Profile.module.css";
 
 function Profile() {
@@ -6,7 +7,12 @@ function Profile() {
         <div className={styles.profileCard}>
             <div className={styles.profileText}>
                 <h1>
-                    <span className={styles.hello}>Hello</span>
+                    <TextLoop>
+                        <span className={styles.greeting}>Hello</span>
+                        <span className={styles.greeting}>Hola!</span>
+                        <span className={styles.greeting}>Namaste!</span>
+
+                    </TextLoop>
                     <br />
                     My name is Nishant...
                 </h1>

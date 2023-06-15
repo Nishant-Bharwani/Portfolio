@@ -1,6 +1,7 @@
 import React from 'react';
 import GithubStats from '../GithubStats/Github';
 import SpotifyStats from '../SpotifyStats/Spotify';
+import Poetries from '../Writings/Poetries';
 import styles from './MyStats.module.css';
 
 const MyStats = () => {
@@ -10,6 +11,8 @@ const MyStats = () => {
                 <h1>More About Me</h1>
                 <SpotifyStats />
                 <hr />
+                {/* <Poetries /> */}
+                {/* <hr /> */}
                 <GithubStats />
             </div>
         </div>

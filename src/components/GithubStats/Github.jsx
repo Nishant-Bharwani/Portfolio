@@ -3,6 +3,7 @@ import { fetchContributions } from "../../utils/fetchers/github";
 import { SubSectionContainer } from "../shared/Container/Container";
 import LinkToNewTab from "../shared/LinkToNewTab/LinkToNewTab";
 import Spinner from "../shared/Spinner/Spinner";
+import Graph from "./Graph";
 
 const Github = () => {
     const [loading, setLoading] = useState(true);
@@ -63,6 +64,7 @@ const Github = () => {
                 </ul>
 
             </SubSectionContainer>
+            <Graph userData={data} />
         </>
     );
 };
