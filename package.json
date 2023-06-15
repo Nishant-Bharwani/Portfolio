@@ -18,6 +18,7 @@
     "react-tilt": "^1.0.2",
     "react-tooltip": "^4.2.19",
     "react-tsparticles": "^1.40.2",
+    "recharts": "^2.7.1",
     "styled-components": "^5.3.11",
     "terminal-in-react": "^4.3.1",
     "tsparticles": "^2.9.3",
