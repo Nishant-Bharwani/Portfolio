@@ -92,20 +92,3 @@ const Spotify = () => {
 };
 
 export default Spotify;
-
-
-
-
-// https://accounts.spotify.com/authorize?response_type=code&client_id=3f681130af4c4a8a92d6b394dfb30d80&scope=user-read-private user-read-email user-modify-playback-state user-read-playback-position user-library-read streaming user-read-playback-state user-read-recently-played playlist-read-private&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback%2F
-
-
-// http://localhost:3000/callback/?code=AQB9CZfnrZDxhNvP1SFeUxSbAAXKnFAZDNdxd3a55jHFMOKJQUEoX28t5m81JzM2cOzqQuwIgrsZipmJp0Afn3uUa46CpgiOFttpWUf8e-py_1cPgRe1lFZqL7h06deThRoBXThMCbww7ahy_UJejeChYk0aGurcOFAInbVdhHtC0TeieDxK2fmGT7VC6MqB9U_XEvePn08BsdlF5sAYwlSbdjon1qnACIyhQmjoOlhKxx_Zmq8upd-nJT2bu46XJvshlj4rUnxkzOmtsxjmkAgdmHS-QiWT42Li9nUc1myKZoFAH6VMteLlOJF7NBOwAchl1aRCZAFECElj8a9XTHfVMfe_HBXAs_a5TfwU313Ji3SedfcIiO5-DLdsco836CBI6l5u_XD0hpnLdtFjK0CYS-D5DiAN7yWL04xFT_eMcEpLA9zyL_ex
-
-
-// {
-//     "access_token": "BQA-z7zlNGeN8-1Q-s9uDIrlidK8J0YG1K1C0qpddJaXGdkJ6TP9PP_10cy4p5RI6XbXtzpJFd-6SIRRzw9XWStrXBuYc07QZ_K87YlYqi0vuhyRhlbGHSnUZx9qyyIoAge437Ea_JVZlvAda9wl30SEapf-tntysk5keJ8iE6bLl4_1GOqIzfG_qYog1w2mldFZ21ZOQrXxDP1f6qQ4N4MF83_unnC9X7YCskJbuCkuSYK58oHk7A",
-//     "token_type": "Bearer",
-//     "expires_in": 3600,
-//     "refresh_token": "AQAmmif1-kFNiddkuAnK7YML_KCdXKeIipI2XxGOctYj5QQFxY6JfnYih8FOlFLJHmuk1pJy4u_078XS4kfFGTGjdzyCq1OxdfMoFYz-gZrsw9-yjKo3d3P0z4wEInnvA0A",
-//     "scope": "playlist-read-private streaming user-modify-playback-state user-library-read user-read-playback-state user-read-email user-read-recently-played user-read-playback-position user-read-private"
-// }

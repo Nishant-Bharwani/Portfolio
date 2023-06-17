@@ -4,7 +4,7 @@ export const projects = [{
         link: "https://realpizza.onrender.com/",
         image: "RealPizza.webp",
         stack: ["CSS", "JavaScript", "React", "NodeJS", "Mongo"],
-        github: "https://github.com/Nishant-Bharwani/realpizza-backend",
+        github: "https://github.com/Nishant-Bharwani/realpizza-app",
     },
     {
         title: "PRAVAH: College Annual Fest Website",
