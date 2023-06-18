@@ -1,5 +1,7 @@
 import { FaDownload } from "react-icons/fa";
+import Tilt from 'react-parallax-tilt';
 import TextLoop from "react-text-loop";
+import Logo from '../Logo/Logo';
 import styles from "./Profile.module.css";
 
 function Profile() {
@@ -26,7 +28,9 @@ function Profile() {
                     Resume <FaDownload className='tooltip-svg' />
                 </a>
             </div>
-            {/* <ProfilePhoto /> */}
+            <Tilt scale={1.15} className="parallaxTilt">
+                <Logo />
+            </Tilt>
         </div>
     );
 }

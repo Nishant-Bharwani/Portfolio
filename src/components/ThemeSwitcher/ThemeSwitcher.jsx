@@ -13,6 +13,7 @@ const ThemeSwitcher = ({ changeParticlesColor }) => {
             text,
             darkShade,
             lightShade,
+            logoPath
         } = THEMES[index];
         if (typeof window !== 'undefined') {
             const html = document.querySelector("html");
@@ -25,7 +26,13 @@ const ThemeSwitcher = ({ changeParticlesColor }) => {
             style.setProperty("--button-text-color", buttonText);
             style.setProperty("--dark-shade", darkShade);
             style.setProperty("--light-shade", lightShade);
+
             if (changeParticlesColor) changeParticlesColor(text);
+
+            const parallaxTilt = document.querySelector('.parallaxTilt div img');
+            if (parallaxTilt) {
+                parallaxTilt.src = logoPath;
+            }
         }
     };
 

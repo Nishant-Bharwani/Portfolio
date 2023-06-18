@@ -20,6 +20,11 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.tilt {
+    background: transparent;
+    box-shadow: none;
+}
+
 .tooltip {
     max-width: 300px;
     width: auto;
