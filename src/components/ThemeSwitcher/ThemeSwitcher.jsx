@@ -18,6 +18,12 @@ const ThemeSwitcher = ({ changeParticlesColor }) => {
         if (typeof window !== 'undefined') {
             const html = document.querySelector("html");
             const style = html.style;
+
+            const parallaxTilt = document.querySelector('.parallaxTilt div img');
+            if (parallaxTilt) {
+                parallaxTilt.src = logoPath;
+            }
+
             style.setProperty("--text-color", text);
             style.setProperty("--background-color", background);
             style.setProperty("--headline-color", headline);
@@ -28,11 +34,6 @@ const ThemeSwitcher = ({ changeParticlesColor }) => {
             style.setProperty("--light-shade", lightShade);
 
             if (changeParticlesColor) changeParticlesColor(text);
-
-            const parallaxTilt = document.querySelector('.parallaxTilt div img');
-            if (parallaxTilt) {
-                parallaxTilt.src = logoPath;
-            }
         }
     };
 
