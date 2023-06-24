@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ReactTerminal } from 'react-terminal';
 const Terminal = () => {
-  const [latitude, setLatitude] = useState(null);
-  const [longitude, setLongitude] = useState(null)
+  // const [latitude, setLatitude] = useState(null);
+  // const [longitude, setLongitude] = useState(null);
   const theme = {
     themeBGColor: '#004643',
     themeToolbarColor: '#004643',
@@ -35,12 +35,32 @@ const Terminal = () => {
   };
   const promptStyling = {
     color: theme.themePromptColor
-  }
+  };
 
   const indentLevel1 = {
     marginLeft: '15px'
-  }
+  };
 
+
+  const getLocation = () => {
+    return new Promise((resolve, reject) => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            resolve({
+              latitude: position.coords.latitude,
+              longitude: position.coords.longitude
+            });
+          },
+          (err) => {
+            reject(err);
+          }
+        );
+      } else {
+        reject(new Error("Geolocation is not supported."));
+      }
+    });
+  };
 
   const commands = {
     help: () => {
@@ -76,17 +96,9 @@ const Terminal = () => {
       )
     },
 
-    getlocation: () => {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition((position) => {
-          setLatitude(position.coords.latitude);
-          setLongitude(position.coords.longitude);
+    getlocation: async () => {
 
-        }, (err) => {
-          console.log(err);
-        });
-      }
-
+      const { latitude, longitude } = await getLocation();
 
       if (latitude === null || longitude === null) {
         return (<span style={{ color: '#ff443e', fontWeight: 'bold' }}>Can't fetch your location!</span>);
