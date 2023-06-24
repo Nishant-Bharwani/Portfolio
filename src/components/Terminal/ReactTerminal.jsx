@@ -1,8 +1,6 @@
 import React from 'react';
 import { ReactTerminal } from 'react-terminal';
 const Terminal = () => {
-  // const [latitude, setLatitude] = useState(null);
-  // const [longitude, setLongitude] = useState(null);
   const theme = {
     themeBGColor: '#004643',
     themeToolbarColor: '#004643',
@@ -98,18 +96,22 @@ const Terminal = () => {
 
     getlocation: async () => {
 
-      const { latitude, longitude } = await getLocation();
+      try {
+        const { latitude, longitude } = await getLocation();
 
-      if (latitude === null || longitude === null) {
+        if (latitude === null || longitude === null) {
+          return (<span style={{ color: '#ff443e', fontWeight: 'bold' }}>Can't fetch your location!</span>);
+        } else {
+          return (
+            <span style={{ marginTop: '5px' }}>
+              <span style={buttonColor}>Latitude: <span style={textColor}>{latitude}</span></span>
+              <br />
+              <span style={buttonColor}>Longitude: <span style={textColor}>{longitude}</span></span>
+            </span>
+          );
+        }
+      } catch (err) {
         return (<span style={{ color: '#ff443e', fontWeight: 'bold' }}>Can't fetch your location!</span>);
-      } else {
-        return (
-          <span style={{ marginTop: '5px' }}>
-            <span style={buttonColor}>Latitude: <span style={textColor}>{latitude}</span></span>
-            <br />
-            <span style={buttonColor}>Longitude: <span style={textColor}>{longitude}</span></span>
-          </span>
-        );
       }
 
 
