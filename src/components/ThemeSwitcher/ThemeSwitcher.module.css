@@ -5,6 +5,7 @@
     background-color: #fff;
     padding: 15px 0 15px 10px;
     border-radius: 0 0 0 20px;
+    z-index: 4;
 }
 
 .container .button {

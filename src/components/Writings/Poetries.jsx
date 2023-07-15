@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
@@ -12,6 +11,22 @@ const Poetries = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: false,
+
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     }
 
     return (
@@ -19,13 +34,7 @@ const Poetries = () => {
             <SubSectionContainer>
                 <h2>I'm also into writing 🖋️</h2>
                 <p>Here are some of my poetries:</p>
-                <section style={{ margin: '4px', display: 'flex', gap: '20px', paddingBottom: '20px' }}>
-                    {/* <button style={{ width: '10px', height: '10px' }} onClick={sliderRef?.slickPrev}>
-                    <AiOutlineArrowLeft />
-                </button>
-                <button style={{ width: '10px', height: '10px' }} onClick={sliderRef?.slickNext}>
-                    <AiOutlineArrowRight />
-                </button> */}
+                <section style={{ margin: '4px' }}>
                     <Slider ref={setSliderRef}  {...sliderSettings}>
                         <SpiralBook title={"A"} />
                         <SpiralBook title={"B"} />

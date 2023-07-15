@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ReactTerminal } from 'react-terminal';
+import styles from './Terminal.module.css';
 const Terminal = () => {
   const theme = {
     themeBGColor: '#004643',
@@ -126,8 +127,27 @@ const Terminal = () => {
 
   };
 
+
+  const terminalRef = useRef(null);
+
+  useEffect(() => {
+    const terminalDiv = terminalRef.current;
+
+    const handleTouchStart = () => {
+      terminalDiv.scrollTop = 0;
+    };
+
+    terminalDiv.addEventListener('touchstart', handleTouchStart, { passive: true });
+
+    return () => {
+      terminalDiv.removeEventListener('touchstart', handleTouchStart);
+    };
+  }, []);
+
+
   return (
-    <div style={{ border: '2px solid var(--text-color)', backgroundColor: 'var(--background-color)', height: '100%' }}>
+    <div id='terminal-div' ref={terminalRef} style={{ border: '2px solid var(--text-color)', backgroundColor: 'var(--background-color)', height: '100%' }}>
+
       <ReactTerminal
         prompt={<span style={promptStyling}>$ nishantb &gt;&gt;</span>}
         commands={commands}
@@ -140,7 +160,7 @@ const Terminal = () => {
 
       />
     </div>
-  )
+  );
 }
 
 export default Terminal;

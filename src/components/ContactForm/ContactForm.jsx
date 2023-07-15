@@ -1,3 +1,4 @@
+import validator from 'email-validator';
 import { useState } from "react";
 import { collection, db, doc, setDoc } from "../../firebase";
 import { Button } from "../shared/Button/Button";
@@ -24,6 +25,9 @@ const ContactForm = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         const { name, email, message } = formData;
+        if (!validator.validate(email)) {
+            return setError("Enter a valid email address");
+        }
         if (!name || !email || !message)
             return setError("Please fill all the fields");
         setError("");
@@ -50,7 +54,7 @@ const ContactForm = () => {
     if (submitted)
         return (
             <div className={styles.thankYouContainer}>
-                <h1>Thank you for contacting me {`;)`}</h1>
+                <h1>Thank you for contacting me!</h1>
                 <h2>Will get back to you soon</h2>
             </div>
         );
@@ -60,6 +64,8 @@ const ContactForm = () => {
     return (
         <div className={styles.formContainer}>
             <h1>Some message for me?</h1>
+
+
             <form className={styles.form} onSubmit={handleSubmit}>
                 <TextInput
                     type='text'
@@ -75,6 +81,7 @@ const ContactForm = () => {
                     onChange={updateInput}
                     value={formData.email || ""}
                 />
+
                 <TextArea
                     name='message'
                     placeholder='Message'

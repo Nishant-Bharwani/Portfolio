@@ -14,6 +14,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--background-color);
     color: var(--text-color);
+    /* overflow-x: hidden; */
 }
 
 code {
@@ -114,6 +115,11 @@ code {
     background: var(--background-color) !important;
     color: var(--button-color) !important;
 }
+
+
+/* #terminal-div {
+    overflow: auto;
+} */
 
 #terminalEditor {
     background: var(--background-color) !important;
