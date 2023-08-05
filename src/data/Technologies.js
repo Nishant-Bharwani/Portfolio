@@ -1,13 +1,19 @@
 export const stacks = [
     "CSS",
     "Saas",
+    "Bootstrap",
+    "TailwindCSS",
     "JavaScript",
     "React",
     "Redux",
     "NodeJS",
     "Mongo",
     "Firebase",
+    "Stripe",
+    "Razorpay",
     "Python",
     "Git",
     "Github",
+    "Render",
+    "Netlify"
 ];

@@ -1,10 +1,19 @@
-export const projects = [{
+export const projects = [
+    {
         title: "RealPizza",
-        content: `A  pizza delivery application with varieties of pizzas and customizable pizzas with a admin panel for order tracking and inventory management`,
+        content: `A pizza delivery application with varieties of pizzas and customizable pizzas with a admin panel for order tracking and inventory management`,
         link: "https://realpizza.onrender.com/",
         image: "RealPizza.webp",
-        stack: ["CSS", "JavaScript", "React", "NodeJS", "Mongo"],
+        stack: ["CSS", "Bootstrap", "JavaScript", "React", "Redux", "NodeJS", "Mongo", "Razorpay", "Render"],
         github: "https://github.com/Nishant-Bharwani/realpizza-app",
+    },
+    {
+        title: "Hoteller",
+        content: "A full stack Hotel booking site with faboulous UI and lightning fast backend with different room selection feature.",
+        link: "https://hoteller.onrender.com/",
+        image: 'hoteller.webp',
+        stack: ["TailwindCSS", "JavaScript", "React", "Redux", "NodeJS", "Mongo", "Render"],
+        github: "https://github.com/Nishant-Bharwani/hoteller"
     },
     {
         title: "PRAVAH: College Annual Fest Website",

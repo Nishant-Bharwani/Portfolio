@@ -1,4 +1,5 @@
 import {
+    SiBootstrap,
     SiCss3,
     SiFirebase,
     SiGit,
@@ -10,9 +11,13 @@ import {
     SiNetlify,
     SiNodedotjs,
     SiPython,
+    SiRazorpay,
     SiReact,
     SiRedux,
+    SiRender,
     SiSass,
+    SiStripe,
+    SiTailwindcss,
 } from "react-icons/si";
 
 
@@ -31,5 +36,9 @@ export const Icons = {
     SiRedux,
     SiNetlify,
     SiFirebase,
-
+    SiTailwindcss,
+    SiBootstrap,
+    SiRender,
+    SiRazorpay,
+    SiStripe
 };
