@@ -12,7 +12,7 @@ export const projects = [
         content: "A full stack Hotel booking site with faboulous UI and lightning fast backend with different room selection feature.",
         link: "https://hoteller.onrender.com/",
         image: 'hoteller.webp',
-        stack: ["TailwindCSS", "JavaScript", "React", "Redux", "NodeJS", "Mongo", "Render"],
+        stack: ["TailwindCSS", "JavaScript", "React", "Redux", "NodeJS", "Mongo", "Razorpay", "Render"],
         github: "https://github.com/Nishant-Bharwani/hoteller"
     },
     {

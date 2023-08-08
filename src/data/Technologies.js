@@ -1,4 +1,5 @@
 export const stacks = [
+    "HTML",
     "CSS",
     "Saas",
     "Bootstrap",
@@ -9,7 +10,6 @@ export const stacks = [
     "NodeJS",
     "Mongo",
     "Firebase",
-    "Stripe",
     "Razorpay",
     "Python",
     "Git",
