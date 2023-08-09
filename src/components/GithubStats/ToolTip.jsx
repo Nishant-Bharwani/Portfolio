@@ -3,7 +3,7 @@
 const ToolTip = ({ payload, active, label }) => {
     const getString = (l) => {
         const n = 31 - parseInt(l);
-        if (n) { return `${n} day${n === 1 ? "s" : ""} ago` };
+        if (n) { return `${n} day${n === 1 ? "" : "s"} ago` };
         return "Today";
     };
 
