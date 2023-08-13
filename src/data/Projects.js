@@ -20,7 +20,7 @@ export const projects = [
         content: `Managed Design, Development and Deployment of the site. Added details of various event registrations, upcoming events and contact information shared via website.`,
         link: "https://pravah.skit.ac.in",
         image: "Pravah.webp",
-        stack: ["JavaScript", "Saas", "React"],
+        stack: ["JavaScript", "Saas", "React", "Cpanel"],
     },
     {
         title: "Agrisar",

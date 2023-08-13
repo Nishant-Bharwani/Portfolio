@@ -43,6 +43,13 @@ export const Technologies = [{
     primaryColor: "#F9DC3E",
 },
 {
+    name: "Cpanel",
+    Icon: Icons.SiCpanel,
+    description: "cPanel is web hosting control panel software developed by cPanel, LLC.",
+    url: "https://cpanel.net/",
+    primaryColor: "#ff6c2c;"
+},
+{
     name: "CSS",
     Icon: Icons.SiCss3,
     description: "The language we use to style an HTML document",

@@ -9,9 +9,6 @@ const PoetryModal = ({ isOpen, setOn, data }) => {
         return null;
     }
 
-
-
-
     return (
 
         <ReactPortal wrapperId='react-portal-modal-container' hideOverlay={() => setOn(false)}>

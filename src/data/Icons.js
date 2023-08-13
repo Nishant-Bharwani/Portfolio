@@ -18,6 +18,7 @@ import {
     SiSass,
     SiStripe,
     SiTailwindcss,
+    SiCpanel
 } from "react-icons/si";
 
 
@@ -40,5 +41,6 @@ export const Icons = {
     SiBootstrap,
     SiRender,
     SiRazorpay,
-    SiStripe
+    SiStripe,
+    SiCpanel
 };

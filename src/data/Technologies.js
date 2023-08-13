@@ -14,6 +14,7 @@ export const stacks = [
     "Python",
     "Git",
     "Github",
+    "Cpanel",
     "Render",
     "Netlify"
 ];
