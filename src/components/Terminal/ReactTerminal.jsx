@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { ReactTerminal } from 'react-terminal';
-import styles from './Terminal.module.css';
+// import styles from './Terminal.module.css';
 const Terminal = () => {
   const theme = {
     themeBGColor: '#004643',
