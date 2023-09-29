@@ -28,7 +28,7 @@ function Profile() {
                     Resume <FaDownload className='tooltip-svg' />
                 </a>
             </div>
-            <Tilt scale={1.15} className="parallaxTilt">
+            <Tilt className="parallaxTilt">
                 <Logo />
             </Tilt>
         </div>
