@@ -24,7 +24,7 @@ function Profile() {
                     <span style={{ color: "var(--button-color)" }}>Web Developer</span>
 
                 </h2>
-                <a href='/Nishant_Bharwani.pdf' target='_blank' rel='noopener noreferrer'>
+                <a href='/Nishant__Bharwani.pdf' target='_blank' rel='noopener noreferrer'>
                     Resume <FaDownload className='tooltip-svg' />
                 </a>
             </div>
