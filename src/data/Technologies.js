@@ -11,7 +11,6 @@ export const stacks = [
     "Mongo",
     "Firebase",
     "Razorpay",
-    "Python",
     "Git",
     "Github",
     "Cpanel",
